@@ -1,0 +1,33 @@
+{
+  "name": "cloudflared-ts",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "TypeScript rewrite scaffold for cloudflared",
+  "license": "MIT",
+  "bin": {
+    "cloudflared-ts": "dist/cli/index.js"
+  },
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "dev": "tsx src/cli/index.ts",
+    "start": "node dist/cli/index.js",
+    "typecheck": "tsc --noEmit -p tsconfig.json"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "dependencies": {
+    "pino": "^9.0.0",
+    "pino-pretty": "^11.2.2",
+    "yaml": "^2.5.0",
+    "yargs": "^17.7.2",
+    "zod": "^3.23.8"
+  },
+  "devDependencies": {
+    "@types/node": "^20.12.12",
+    "@types/yargs": "^17.0.33",
+    "tsx": "^4.16.0",
+    "typescript": "^5.4.0"
+  }
+}
